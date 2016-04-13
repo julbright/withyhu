@@ -3,16 +3,16 @@
 module.exports = (robot) ->
 
 
-  robot.respond /roll (.*)/i, (msg) ->
+  robot.respond /roll d[0-9]+/i, (msg) ->
 
-    dieType = msg.match[1]
-    dieNumber = dieType[1..]
+    dieNumber = msg.match[0].match(/[0-9]+/i)[0]
+
     
     selection = Math.floor(Math.random() * dieNumber) + 1
     
     if selection == dieNumber
       msg.reply "CRITICAL HIT: #{selection}"
     else if selection == 1
-      msg.reply "CRITICAL MISS: 1"
+      msg.reply "CRITICAL MISS: #{selection}"
     else
       msg.reply "#{selection}"
