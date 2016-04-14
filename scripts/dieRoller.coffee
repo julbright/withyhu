@@ -6,6 +6,7 @@ module.exports = (robot) ->
   robot.respond /roll d[0-9]+/i, (msg) ->
 
     dieNumber = msg.match[0].match(/[0-9]+/i)[0]
+    dieNumber = parseInt(dieNumber, 10)
 
     
     selection = Math.floor(Math.random() * dieNumber) + 1
