@@ -1,5 +1,10 @@
+# Description:
+#
+#   It's like you're rolling a die ON THE INTERNET.
+#
+# Dependencies:
 #   None
-
+#
 #
 # Commands:
 #   hubot roll d<number> - Simulate the roll of a <number> sided die.
