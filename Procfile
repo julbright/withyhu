@@ -1,1 +1,1 @@
-web: bin/hubot -a slack -n Elmer
+web: bin/hubot -a slack
