@@ -1,3 +1,11 @@
+#   None
+
+#
+# Commands:
+#   hubot roll d<number> - Simulate the roll of a <number> sided die.
+#
+# Author:
+#   julbright
 
 
 module.exports = (robot) ->
